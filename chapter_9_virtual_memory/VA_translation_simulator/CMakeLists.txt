@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(SOURCES
     main.cpp
     physical_memory.cpp 
+    page_table.cpp
 )
 
 add_executable(app ${SOURCES})
