@@ -20,3 +20,4 @@ void PageTable::invalidate(uint8_t virtual_page_number) {
 }
 
 size_t PageTable::size() const { return entries.size(); }
+
