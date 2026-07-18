@@ -9,6 +9,7 @@ set(SOURCES
     physical_memory.cpp 
     page_table.cpp
     MMU.cpp
+    TLB.cpp
 )
 
 add_executable(app ${SOURCES})
