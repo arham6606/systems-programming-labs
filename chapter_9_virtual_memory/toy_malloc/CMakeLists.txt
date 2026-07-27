@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Source files are now in the src/ directory
 set(SOURCES
     src/main.cpp
+    src/heap.cpp
 )
 
 add_executable(app ${SOURCES})
