@@ -11,10 +11,18 @@ int main() {
   first->size = obj.heapSize() - sizeof(CustomHeap::BlockHeader);
   first->allocated = false;
 
-  std::cout << "First size:" << first->size << std::endl;
-
   if (!first->allocated) {
     std::cout << "Block is allocated" << std::endl;
   }
+
   
+
+  int index = 0;
+
+  while (first != nullptr) {
+    std::cout << "First size:" << first->size << std::endl;
+    first = obj.nextBlock(first);
+    index++;
+  }
+  std::cout << "Index:" << index << std::endl;
 }

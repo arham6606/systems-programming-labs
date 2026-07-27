@@ -16,4 +16,18 @@ BlockHeader *Heap::pointerToHeaderSection(std::byte *user) {
   return reinterpret_cast<BlockHeader *>(user - sizeof(BlockHeader));
 }
 
+BlockHeader *Heap::nextBlock(BlockHeader *current) {
+  if (current == nullptr) {
+    return nullptr;
+  }
+
+  std::byte *next = pointerOfPayloadSectionToUser(current) + current->size;
+
+  if (next >= heapEnd()) {
+    return nullptr;
+  }
+
+  return reinterpret_cast<BlockHeader *>(next);
+}
+
 }; // namespace CustomHeap

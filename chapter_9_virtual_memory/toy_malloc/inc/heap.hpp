@@ -28,5 +28,7 @@ public:
   std::byte *pointerOfPayloadSectionToUser(BlockHeader *header);
 
   BlockHeader *pointerToHeaderSection(std::byte *user);
+
+  BlockHeader *nextBlock(BlockHeader *current);
 };
 }; // namespace CustomHeap
