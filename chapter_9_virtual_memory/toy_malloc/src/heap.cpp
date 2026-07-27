@@ -30,4 +30,14 @@ BlockHeader *Heap::nextBlock(BlockHeader *current) {
   return reinterpret_cast<BlockHeader *>(next);
 }
 
+BlockHeader *Heap::findFreeBlock(std::size_t requested) {
+  for (BlockHeader *curr = reinterpret_cast<BlockHeader *>(heapBegin());
+       curr != nullptr; curr = nextBlock(curr)) {
+    if (!curr->allocated && curr->size >= requested) {
+      return curr; // First fit found
+    }
+  }
+  return nullptr; // No block large enough
+}
+
 }; // namespace CustomHeap

@@ -11,11 +11,9 @@ int main() {
   first->size = obj.heapSize() - sizeof(CustomHeap::BlockHeader);
   first->allocated = false;
 
-  if (!first->allocated) {
+  if (first->allocated) {
     std::cout << "Block is allocated" << std::endl;
   }
-
-  
 
   int index = 0;
 
@@ -25,4 +23,12 @@ int main() {
     index++;
   }
   std::cout << "Index:" << index << std::endl;
+
+  CustomHeap::BlockHeader *test = obj.findFreeBlock(6497);
+
+  if (test == nullptr) {
+    std::cout << "okay" << std::endl;
+  } else {
+    std::cout << "size:" << test->size << std::endl;
+  }
 }

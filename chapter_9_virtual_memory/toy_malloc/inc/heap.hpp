@@ -30,5 +30,7 @@ public:
   BlockHeader *pointerToHeaderSection(std::byte *user);
 
   BlockHeader *nextBlock(BlockHeader *current);
+
+  BlockHeader *findFreeBlock(std::size_t requested);
 };
 }; // namespace CustomHeap
