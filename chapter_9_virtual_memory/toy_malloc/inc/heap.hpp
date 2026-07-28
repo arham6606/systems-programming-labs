@@ -32,5 +32,11 @@ public:
   BlockHeader *nextBlock(BlockHeader *current);
 
   BlockHeader *findFreeBlock(std::size_t requested);
+
+  std::byte *allocate(size_t current);\
+
+  void printHeap();
+
+  void heapInit();
 };
 }; // namespace CustomHeap

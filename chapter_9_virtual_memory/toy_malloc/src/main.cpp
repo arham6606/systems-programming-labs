@@ -2,33 +2,22 @@
 
 int main() {
   CustomHeap::Heap obj;
-  std::cout << "Heap size:" << obj.heapSize() << std::endl;
-  std::cout << "Heap begin:" << obj.heapBegin() << std::endl;
-  std::cout << "Heap end:" << obj.heapEnd() << std::endl;
+  std::cout << "Inializing Heap" << std::endl;
+  obj.heapInit();
 
-  CustomHeap::BlockHeader *first =
-      reinterpret_cast<CustomHeap::BlockHeader *>(obj.heapBegin());
-  first->size = obj.heapSize() - sizeof(CustomHeap::BlockHeader);
-  first->allocated = false;
+  std::cout << "Before Allocation" << std::endl;
+  obj.printHeap();
 
-  if (first->allocated) {
-    std::cout << "Block is allocated" << std::endl;
-  }
+  std::byte *allocation_1 = obj.allocate(64);
+  std::cout << "Allocate(64) -> " << static_cast<void *>(allocation_1)
+            << std::endl;
 
-  int index = 0;
+  std::cout << "After Allocation" << std::endl;
+  obj.printHeap();
 
-  while (first != nullptr) {
-    std::cout << "First size:" << first->size << std::endl;
-    first = obj.nextBlock(first);
-    index++;
-  }
-  std::cout << "Index:" << index << std::endl;
-
-  CustomHeap::BlockHeader *test = obj.findFreeBlock(6497);
-
-  if (test == nullptr) {
-    std::cout << "okay" << std::endl;
-  } else {
-    std::cout << "size:" << test->size << std::endl;
+  std::cout << "Second Allocation" << std::endl;
+  std::byte *allocation_2 = obj.allocate(32);
+  if (allocation_2 == nullptr) {
+    std::cout << "Allocation 2 failed" << std::endl;
   }
 }
