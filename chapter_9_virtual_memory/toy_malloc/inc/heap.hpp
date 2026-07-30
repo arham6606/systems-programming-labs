@@ -12,15 +12,13 @@ struct BlockHeader {
 
 class Heap {
 private:
-  alignas(std::max_align_t) std::byte heap[1024];
+  alignas(std::max_align_t) std::byte heap[2048];
 
   BlockHeader *block;
 
   std::byte *heapBegin();
 
   std::byte *heapEnd();
-
-  std::size_t heapSize();
 
   std::byte *pointerOfPayloadSectionToUser(BlockHeader *header);
 
@@ -35,11 +33,16 @@ private:
 public:
   Heap() = default;
 
+  std::size_t heapSize();
+
   void printHeap();
 
   void heapInit();
 
   std::byte *allocate(std::size_t current);
+
   void deallocate(std::byte *current);
+
+  void printHeapSummary();
 };
 }; // namespace CustomHeap

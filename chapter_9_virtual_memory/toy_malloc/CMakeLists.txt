@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(SOURCES
     src/main.cpp
     src/heap.cpp
+    test/test.cpp
 )
 
 add_executable(app ${SOURCES})
@@ -15,5 +16,7 @@ add_executable(app ${SOURCES})
 # Tell the compiler to look for .hpp files in the inc/ directory
 target_include_directories(app PRIVATE 
     ${CMAKE_SOURCE_DIR}/inc
+    ${CMAKE_SOURCE_DIR}/test
+    
    
 )

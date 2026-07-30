@@ -43,6 +43,7 @@ BlockHeader *Heap::findFreeBlock(std::size_t requested) {
 std::byte *Heap::allocate(std::size_t current) {
   BlockHeader *block = findFreeBlock(current);
   if (block == nullptr) {
+
     return nullptr; // Out of memory
   }
 
@@ -110,6 +111,25 @@ void Heap::coalescingFreeBlocks() {
       curr = nxt;
     }
   }
+}
+
+void Heap::printHeapSummary() {
+  int total = 0, alloc = 0, free = 0;
+  std::size_t allocBytes = 0, freeBytes = 0;
+  for (BlockHeader *curr = reinterpret_cast<BlockHeader *>(heapBegin());
+       curr != nullptr; curr = nextBlock(curr)) {
+    ++total;
+    if (curr->allocated) {
+      ++alloc;
+      allocBytes += curr->size;
+    } else {
+      ++free;
+      freeBytes += curr->size;
+    }
+  }
+  std::printf("Summary: %d blocks (%d alloc, %d free) | "
+              "%zu bytes alloc, %zu bytes free\n",
+              total, alloc, free, allocBytes, freeBytes);
 }
 
 }; // namespace CustomHeap

@@ -1,8 +1,9 @@
-#include "heap.hpp"
+#include "test.hpp"
 
 int main() {
-  CustomHeap::Heap obj;
-  obj.heapInit();
-  
-
+  testExhaustion();
+  testAlternate();
+  testFreeAll();
+  testRandom();
+  testEdgeCases();
 }
