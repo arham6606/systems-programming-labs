@@ -89,4 +89,27 @@ void Heap::heapInit() {
   first->allocated = false;
 }
 
+void Heap::deallocate(std::byte *ptr) {
+  if (ptr == nullptr)
+    return;
+
+  BlockHeader *header = pointerToHeaderSection(ptr);
+  header->allocated = false;
+  coalescingFreeBlocks();
+}
+
+void Heap::coalescingFreeBlocks() {
+  BlockHeader *curr = reinterpret_cast<BlockHeader *>(heapBegin());
+  while (curr != nullptr) {
+    BlockHeader *nxt = nextBlock(curr);
+    if (nxt != nullptr && !curr->allocated && !nxt->allocated) {
+      // Merge nxt into curr
+      curr->size += sizeof(BlockHeader) + nxt->size;
+      // Stay at curr; the new next might also be free
+    } else {
+      curr = nxt;
+    }
+  }
+}
+
 }; // namespace CustomHeap

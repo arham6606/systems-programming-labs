@@ -30,6 +30,8 @@ private:
 
   BlockHeader *findFreeBlock(std::size_t requested);
 
+  void coalescingFreeBlocks();
+
 public:
   Heap() = default;
 
@@ -38,5 +40,6 @@ public:
   void heapInit();
 
   std::byte *allocate(std::size_t current);
+  void deallocate(std::byte *current);
 };
 }; // namespace CustomHeap
