@@ -31,7 +31,7 @@ The goal of this project was to move beyond theory by building a simulator that 
 # Architecture & Translation Flow
 
 <p align="center">
-  <img src="chapter_9_virtual_memory/VA_translation_simulator/assets/VPN.jpg" alt="Virtual Address Translation Flow" width="900">
+  <img src="assets/VPN.jpg" alt="Virtual Address Translation Flow" width="900">
 </p>
 
 The simulator models the logical behavior of an MMU during address translation.
