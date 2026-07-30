@@ -16,9 +16,6 @@ private:
 
   BlockHeader *block;
 
-public:
-  Heap() = default;
-
   std::byte *heapBegin();
 
   std::byte *heapEnd();
@@ -33,10 +30,13 @@ public:
 
   BlockHeader *findFreeBlock(std::size_t requested);
 
-  std::byte *allocate(size_t current);\
+public:
+  Heap() = default;
 
   void printHeap();
 
   void heapInit();
+
+  std::byte *allocate(std::size_t current);
 };
 }; // namespace CustomHeap

@@ -40,13 +40,30 @@ BlockHeader *Heap::findFreeBlock(std::size_t requested) {
   return nullptr; // No block large enough
 }
 
-std::byte *Heap::allocate(size_t current) {
+std::byte *Heap::allocate(std::size_t current) {
   BlockHeader *block = findFreeBlock(current);
   if (block == nullptr) {
     return nullptr; // Out of memory
   }
+
+  std::size_t remaining = block->size - current;
+
+  // Split only if there's enough room left for a new header
+  // plus at least one byte of payload for the free remainder.
+  if (remaining > sizeof(BlockHeader)) {
+    // New free block starts right after the allocated portion
+    BlockHeader *newFree = reinterpret_cast<BlockHeader *>(
+        pointerOfPayloadSectionToUser(block) + current);
+    newFree->size = remaining - sizeof(BlockHeader);
+    newFree->allocated = false;
+
+    // Shrink the current block to exactly what was requested
+    block->size = current;
+  }
+  // else: remaining is too small to split; give the user the whole block
+  //       (internal fragmentation — can't be helped here)
+
   block->allocated = true;
-  // NO SPLITTING
   return pointerOfPayloadSectionToUser(block);
 }
 

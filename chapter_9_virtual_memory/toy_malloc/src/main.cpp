@@ -2,22 +2,19 @@
 
 int main() {
   CustomHeap::Heap obj;
-  std::cout << "Inializing Heap" << std::endl;
   obj.heapInit();
 
-  std::cout << "Before Allocation" << std::endl;
+  std::printf("=== Before allocation ===\n");
   obj.printHeap();
 
-  std::byte *allocation_1 = obj.allocate(64);
-  std::cout << "Allocate(64) -> " << static_cast<void *>(allocation_1)
-            << std::endl;
+  std::byte *p1 = obj.allocate(64);
+  std::byte *p2 = obj.allocate(128);
+  std::byte *p3 = obj.allocate(256);
 
-  std::cout << "After Allocation" << std::endl;
+  std::printf("\nallocate(64)  -> %p\n", static_cast<void *>(p1));
+  std::printf("allocate(128) -> %p\n", static_cast<void *>(p2));
+  std::printf("allocate(256) -> %p\n\n", static_cast<void *>(p3));
+
+  std::printf("=== After allocations ===\n");
   obj.printHeap();
-
-  std::cout << "Second Allocation" << std::endl;
-  std::byte *allocation_2 = obj.allocate(32);
-  if (allocation_2 == nullptr) {
-    std::cout << "Allocation 2 failed" << std::endl;
-  }
 }
