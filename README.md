@@ -23,11 +23,14 @@ Models how a Memory Management Unit (MMU) translates virtual addresses into phys
 ### 2. [Toy Memory Allocator](chapter_9_virtual_memory/toy_malloc/)
 A simplified implementation of the core algorithms behind `malloc()`: an implicit free list, First-Fit allocation, block splitting, and adjacent block coalescing. Focused on how a heap tracks free memory and reclaims it on `free()`, without relying on the system allocator.
 
+### 3. [UNIX I/O Model](chapter_10_unix_io/)
+Explores the Linux UNIX I/O model and how applications interact with files through file descriptors. Covers `open()`, `read()`, `write()`, `close()`, EOF, partial reads/writes, file metadata, directory traversal, file descriptor and open-file tables, `fork()` and shared file offsets. Includes practical C++ implementations and diagrams demonstrating the underlying kernel abstractions.
+
 ---
 
 ## Common Design Philosophy
 
-Both projects follow the same principles:
+All projects follow the same principles:
 
 - **Model the algorithm, not the hardware.** Neither project emulates real x86 page table formats or glibc-level allocator internals — the point is to get the core logic right, not to compete with production systems.
 - **No external frameworks.** Plain C++, close to the system, so nothing hides how the pieces fit together.
@@ -37,4 +40,4 @@ Both projects follow the same principles:
 
 ## Reference
 
-- Randal E. Bryant, David R. O'Hallaron — **Computer Systems: A Programmer's Perspective (3rd Edition)**, Chapter 9 — Virtual Memory
+- Randal E. Bryant, David R. O'Hallaron — **Computer Systems: A Programmer's Perspective (3rd Edition)**
