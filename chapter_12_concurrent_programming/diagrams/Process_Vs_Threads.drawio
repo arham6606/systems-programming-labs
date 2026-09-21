@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="vzyCF5BMD383spgiAYUa">
+    <mxGraphModel dx="1057" dy="863" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sVuPleM0a08PfGz4RFvF-24" parent="1" style="swimlane;whiteSpace=wrap;html=1;verticalAlign=middle;startSize=23;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Process&lt;/font&gt;" vertex="1">
+          <mxGeometry height="320" width="210" x="220" y="100" as="geometry">
+            <mxRectangle height="30" width="80" x="220" y="100" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-25" parent="sVuPleM0a08PfGz4RFvF-24" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div&gt;&lt;b&gt;&amp;nbsp;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;- Virtual Address Space&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&amp;nbsp;- Code&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&amp;nbsp;- Global&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&amp;nbsp;- Heap&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&amp;nbsp; &amp;nbsp;Thread 1&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Thread 2&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&amp;nbsp;- Register must be private as each&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;thread is executing its own&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;instructions&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(26, 95, 180), rgb(237, 237, 237));&quot;&gt;&amp;nbsp;- Stack must be private because&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;each thread has it own function&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;calls, local variables and return&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;address&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="300" width="210" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-28" parent="sVuPleM0a08PfGz4RFvF-24" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(229, 165, 10), rgb(237, 237, 237));&quot;&gt;Stack&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(229, 165, 10), rgb(237, 237, 237));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(229, 165, 10), rgb(237, 237, 237));&quot;&gt;Registers&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="10" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-31" parent="sVuPleM0a08PfGz4RFvF-24" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(229, 165, 10), rgb(237, 237, 237));&quot;&gt;Stack&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(229, 165, 10), rgb(237, 237, 237));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: light-dark(rgb(229, 165, 10), rgb(237, 237, 237));&quot;&gt;Registers&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="60" x="120" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-38" edge="1" parent="1" source="sVuPleM0a08PfGz4RFvF-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="sVuPleM0a08PfGz4RFvF-41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="759.94" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-34" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Process A&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="10" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-36" parent="sVuPleM0a08PfGz4RFvF-34" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div align=&quot;left&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;b style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&amp;nbsp;- Address Space&lt;/b&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;b style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&amp;nbsp;- Thread&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="200" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-35" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Process B&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="490" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-39" edge="1" parent="sVuPleM0a08PfGz4RFvF-35" source="sVuPleM0a08PfGz4RFvF-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="219.94" />
+            </Array>
+            <mxPoint x="-140" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-37" parent="sVuPleM0a08PfGz4RFvF-35" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;- Address Space&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;- Thread&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="200" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-43" edge="1" parent="1" source="sVuPleM0a08PfGz4RFvF-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="sVuPleM0a08PfGz4RFvF-42" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-41" parent="1" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="340" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-42" parent="1" style="whiteSpace=wrap;html=1;fillColor=none;sketch=0;pointerEvents=1;resizable=0;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="290" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Isolated&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="290" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="sVuPleM0a08PfGz4RFvF-45" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;rounded=0;" value="&lt;strong&gt;&lt;span class=&quot;&quot;&gt;Each process lives in its own isolated address space; nothing is shared by default.&lt;/span&gt;&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="30" width="490" x="105" y="730" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
