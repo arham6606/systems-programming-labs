@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="h2mPTJaJZTi-LtM4qiUp">
+    <mxGraphModel dx="1554" dy="1423" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Fmi2j5-fmkhHnHxoBXye-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="930" width="970" x="220" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Fmi2j5-fmkhHnHxoBXye-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;This what happens when you run the command &quot;gcc -o main main.c sum.c&quot;&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="750" x="220" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Fmi2j5-fmkhHnHxoBXye-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#eeeeee;strokeColor=#36393d;" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;// main.c&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;int add(int a, int b);&amp;nbsp; &amp;nbsp;// declaration: tells compiler add exists elsewhere&lt;br&gt;&lt;br&gt;int main(void) {&lt;br&gt;&amp;nbsp; &amp;nbsp; int x = 3, y = 4;&lt;br&gt;&amp;nbsp; &amp;nbsp; int result = add(x, y);&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // call to function defined in sum.c&lt;br&gt;&amp;nbsp; &amp;nbsp; printf(&quot;add(%d, %d) = %d\n&quot;, x, y, result);&lt;br&gt;&amp;nbsp; &amp;nbsp; return 0;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;}&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;// sum.c&lt;br&gt;int add(int a, int b) {&lt;br&gt;&amp;nbsp; &amp;nbsp; return a + b;&lt;br&gt;}&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="330" width="440" x="1230" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Fmi2j5-fmkhHnHxoBXye-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 15px; color: light-dark(rgb(6, 6, 6), rgb(253, 253, 253));&quot;&gt;&lt;b&gt;This is what it is written inside the main.c and sum.c file&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="440" x="1230" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-6" edge="1" parent="1" source="YhuUckT1DnLYGUKtn7uu-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YhuUckT1DnLYGUKtn7uu-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;main.c&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-8" edge="1" parent="1" source="YhuUckT1DnLYGUKtn7uu-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YhuUckT1DnLYGUKtn7uu-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-5" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Preprocessor&lt;br&gt;(cpp)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-10" edge="1" parent="1" source="YhuUckT1DnLYGUKtn7uu-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YhuUckT1DnLYGUKtn7uu-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-7" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Compiler&lt;br&gt;(cc1)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-12" edge="1" parent="1" source="YhuUckT1DnLYGUKtn7uu-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YhuUckT1DnLYGUKtn7uu-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-9" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Assembler&lt;br&gt;(as)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-11" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;main.o&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div align=&quot;left&quot;&gt;&lt;b&gt;Relocatable object file (.o)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="390" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-22" edge="1" parent="1" source="YhuUckT1DnLYGUKtn7uu-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YhuUckT1DnLYGUKtn7uu-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;sum.c&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-23" edge="1" parent="1" source="YhuUckT1DnLYGUKtn7uu-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YhuUckT1DnLYGUKtn7uu-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-18" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Preprocessor&lt;br&gt;(cpp)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-24" edge="1" parent="1" source="YhuUckT1DnLYGUKtn7uu-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YhuUckT1DnLYGUKtn7uu-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-19" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Compiler&lt;br&gt;(cc1)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-25" edge="1" parent="1" source="YhuUckT1DnLYGUKtn7uu-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YhuUckT1DnLYGUKtn7uu-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-20" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Assembler&lt;br&gt;(as)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-21" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="main.o" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div align=&quot;left&quot;&gt;&lt;b&gt;Relocatable object file (.o)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="710" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-38" edge="1" parent="1" source="YhuUckT1DnLYGUKtn7uu-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YhuUckT1DnLYGUKtn7uu-37" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Linker&lt;br&gt;(ld)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="480" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-32" edge="1" parent="1" source="YhuUckT1DnLYGUKtn7uu-11" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="YhuUckT1DnLYGUKtn7uu-21" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="570" y="750" as="sourcePoint" />
+            <mxPoint x="620" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-36" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="YhuUckT1DnLYGUKtn7uu-30" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="540" y="750" as="sourcePoint" />
+            <mxPoint x="725" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-37" parent="1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Executable program&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="480" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Preprocessing: Expands macros and header files.&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Compilation: Translates C source into assembly.&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Assembly: Generate machine code object files (.o).&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;Linking: Resolve symbols and relocate references&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;.&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="560" x="630" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="YhuUckT1DnLYGUKtn7uu-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;&amp;nbsp;GCC acts as the compiler driver, coordinating these stages. Remember GCC is not a compiler but rather a driver which invokes the compiler&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="970" x="220" y="1080" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
